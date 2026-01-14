@@ -11,7 +11,7 @@ def call(String projectName, String projectKey, String projectVersion) {
             -Dsonar.projectName="${projectName}" \
             -Dsonar.projectVersion=${projectVersion} \
             -Dsonar.sources=src/main/java \
-            -Dsonar.java.binaries=build/classes/java/main \
+            -Dsonar.java.binaries=build/classes \
             -Dsonar.exclusions=**/test/**,**/build/**
         """
     }
