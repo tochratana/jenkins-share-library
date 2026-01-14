@@ -1,7 +1,7 @@
 
 def call(String projectName, String projectKey , String projectVersion){
   
-         withSonarQubeEnv(credentialsId: 'SONARQUBE_TOKEN', installationName: 'sonarqube-scanner') {
+         withSonarQubeEnv(credentialsId: 'SONARQUBE-TOKEN', installationName: 'sonarqube-scanner') {
                 script{
                     sh """
                     ${scannerHome}/bin/sonar-scanner \
